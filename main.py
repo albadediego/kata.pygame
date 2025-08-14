@@ -14,13 +14,10 @@ pg.display.set_caption("Intro Pygame") #agregar un titulo a mi ventana
 game_over = True
 
 rectangulo1 = Rectangulo(0,300,(223, 40, 220))
-rectangulo1.direccionar(1,1)
 
-rectangulo2 = Rectangulo(0,350)
-rectangulo2.direccionar(2,2)
+rectangulo2 = Rectangulo(0,350, vx=2, vy=2)
 
-rectangulo3 = Rectangulo(0,400,(53,185,36))
-rectangulo3.direccionar(2,2)
+rectangulo3 = Rectangulo(0,400,(53,185,36), vx=2, vy=2)
 
 while game_over:
     for eventos in pg.event.get(): #capturar todos los eventos mientras se ejecuta el bucle

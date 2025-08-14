@@ -1,14 +1,10 @@
 class Rectangulo:
-    def __init__(self, posX, posY, color=(255,255,255), w=20, h=20):
+    def __init__(self, posX, posY, color=(255,255,255), w=20, h=20, vx=1, vy=1):
         self.posX = posX
         self.posY = posY
         self.color = color
         self.w = w
         self.h = h
-        self.vx = 0
-        self.vy = 0
-
-    def direccionar(self, vx, vy):
         self.vx = vx
         self.vy = vy
 
