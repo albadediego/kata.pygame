@@ -32,10 +32,15 @@ while game_over:
 
     #agregamos objeto a la pantalla
     #draw.rect(sourface, color en (rgb), posiciones(posicionX, posicionY, tamañoX, tamañoY))
+    rectangulo1.dibujar(pantalla)
+    rectangulo2.dibujar(pantalla)
+    rectangulo3.dibujar(pantalla)
+    
+    '''
     pg.draw.rect(pantalla, rectangulo1.color, (rectangulo1.posX, rectangulo1.posY, rectangulo1.h, rectangulo1.w))
     pg.draw.rect(pantalla, rectangulo2.color, (rectangulo2.posX, rectangulo2.posY, rectangulo2.h, rectangulo2.w))
     pg.draw.rect(pantalla, rectangulo3.color, (rectangulo3.posX, rectangulo3.posY, rectangulo3.h, rectangulo3.w))
-
+    '''
     pg.display.flip() #funcion para cargar toda la configuracion que va dentro de la pantalla
 
 

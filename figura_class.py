@@ -1,3 +1,5 @@
+import pygame as pg
+
 class Rectangulo:
     def __init__(self, posX, posY, color=(255,255,255), w=20, h=20, vx=1, vy=1):
         self.posX = posX
@@ -16,3 +18,6 @@ class Rectangulo:
             self.vx = self.vx*-1
         if self.posY == yMax or self.posY == 0:
             self.vy = self.vy*-1
+
+    def dibujar(self, pantalla):
+        pg.draw.rect(pantalla, self.color, (self.posX, self.posY, self.h, self.w))
